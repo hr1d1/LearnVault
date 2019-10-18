@@ -1,0 +1,94 @@
+/*custom font*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+/*basic reset*/
+* {margin: 0; padding: 0;}
+
+html {
+	height: 100%;
+	/*Image only BG fallback*/
+
+	/*background = gradient + image pattern combo*/
+
+}
+
+body {
+	font-family: montserrat, arial, verdana;
+
+
+}
+/*form styles*/
+#sform ,#tform, #addform, #joinform,#joinForm {
+	width: 400px;
+	margin: 50px auto;
+	padding: 50px 15px 0px 15px;
+	text-align: center;
+	position: relative;
+	border: 1px solid ;
+	background-image: radial-gradient(#fff,#eee);
+
+
+}
+#sform fieldset,#tform fieldset, #addform fieldset, #joinform fieldset,#joinForm fieldset {
+	background: white;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding:30px;
+	box-sizing: border-box;
+	width: 80%;
+	margin: 0 10%;
+
+	/*stacking fieldsets above each other*/
+	position: relative;
+}
+/*Hide all except first fieldset*/
+#sform fieldset:not(:first-of-type),#tform fieldset:not(:first-of-type),#addform fieldset:not(:first-of-type),#joinform fieldset:not(:first-of-type),#joinForm fieldset:not(:first-of-type) {
+	display: none;
+}
+/*inputs*/
+#sform input, #sform textarea,#tform input, #tform textarea,#addform input, #addform textarea,#joinform input, #joinform textarea,#joinForm input, #joinForm textarea {
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #2C3E50;
+	font-size: 13px;
+
+}
+/*buttons*/
+#tsform .action-button #sform .action-button{
+	width: 100px;
+	background: #4b00bd;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+
+}
+#sform .action-button:hover, #sform .action-button:focus,#tform .action-button:hover, #tform .action-button:focus,#addform .action-button:hover, #addform .action-button:focus,#joinform .action-button:hover, #joinform .action-button:focus,#joinForm .action-button:hover, #joinForm .action-button:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+
+
+/*headings*/
+.fs-title {
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #2C3E50;
+	margin-bottom: 10px;
+}
+.fs-subtitle {
+	font-weight: normal;
+	font-size: 13px;
+	color: #666;
+	margin-bottom: 20px;
+
+
+.

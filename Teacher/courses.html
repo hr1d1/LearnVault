@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Open Source Learning Website">
+    <meta name="author" content="Hridita Jalal">
+
+    <title>Courses</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Candal|Alegreya+Sans">
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/imagehover.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <!--  <link rel="stylesheet" href="../css/index.css">-->
+    <link rel="stylesheet" href="../css/signup.css">
+    <link rel="stylesheet" href="../css/courses.css">
+
+
+
+  </head>
+  <body>
+    <!--Navigation bar-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="homepage.html">Learn<span>Vault</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="#" >Courses</a></li>
+            <!--  <li><a href="uploads.html" >My Uploads</a></li>-->
+            <li><a href="about1.html">About Us</a></li>
+          <!--  <li><a href="profile.html">Profile</a></li>-->
+
+
+          <li class="btn-trial">  <div class="search-area">
+         <form action="">
+           <input id="search" name="search" type="text" placeholder="What're you looking for ?">
+           <input id="search_submit" value="Search" type="submit">
+           <i class="fa fa-search"></i>
+         </form>
+       </div></li>
+     </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+  <div>
+
+
+    <div style="height:125px">
+
+    </div>
+    <form id="joinForm">
+
+    <div >
+      <div>
+        <label for="join">Course Code</label>
+        <input type="text" id="coursecode" placeholder="Course Code" required=""/>
+      </div>
+
+      </div>
+
+
+
+
+        <input type="submit" name="join" class="submit action-button"value="Join" />
+                  <hr class="my-4"></p>
+
+    </form>
+
+
+</div>
+
+<div >
+
+
+
+  <form id="addform">
+
+  <div >
+    <div>
+      <label for="coursetitle">Course Title</label>
+      <input type="text" id="coursetitle" placeholder="Course Title" required=""/>
+    </div>
+    <div style="height:10px">
+
+    </div>
+    <div>
+      <label for="credit-hr" class="input-lbl">Credit Hrs</label>
+      <span style="padding-left:30px"></span>
+        <select id="credit-hr" class="input-txt" name="credit-hr">
+                      <option value="0.75">0.75</option>
+                      <option value="1.00">1.00</option>
+                      <option value="1.50">1.50</option>
+                      <option value="2.00">2.00</option>
+                      <option value="3.00">3.00</option>
+                      <option value="4.00">4.00</option>
+                  </select>
+
+    </div>
+    <div style="height:10px">
+
+    </div>
+    <div>
+      <label for="coursecode">Course Code</label>
+      <input type="text" id="courseCode" placeholder="Course Code" />
+      <input type="button" class="submit action-button" onclick="genCourseKey()" value="Generate Key" />
+                <hr class="my-4"></p>
+    </div>
+
+    </div>
+
+
+
+
+      <input type="submit" name="join" class="submit action-button" value="Create" />
+                <hr class="my-4"></p>
+
+  </form>
+
+  <div style="height:150px">
+
+  </div>
+</div>
+
+
+
+<div id="courelist">
+  <div >
+
+  </div>
+  <div class="container">
+
+    <table class="tableCourse" id="table-courses">
+            <thead>
+                <tr>
+                    <th class="credit-col">Credit Hrs.</th>
+                    <th class="course-title-col">Course title</th>
+                    <th class="course-code-col">Joining Code</th>
+                </tr>
+            </thead>
+            <tbody class="table-courses-tbody">
+
+            </tbody>
+
+  </table>
+  <div style="height:125px">
+
+  </div>
+  <div style="padding: 20px 20px;" align="center" >
+			<button class="join-new-button" onclick="courseForm()" style="width: 100px">
+			Join</button>
+
+
+      <button class="join-new-button" onclick="AddCourseForm()" style="width: 100px">
+      Create</button>
+
+  </div>
+</div>
+<div style="height:300px">
+
+</div>
+</div>
+
+
+
+
+    <!--Footer-->
+    <footer id="footer" class="footer" class="page-footer">
+      <div class="container text-center">
+
+
+
+        <div class="credits">
+
+          Designed by Hridita Jalal
+        </div>
+      </div>
+    </footer>
+    <!--/ Footer-->
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-firestore.js"></script>
+
+<script src="../js/main.js"></script>
+<script src="../js/joincourse.js"></script>
+<script src="../js/createcourse.js"></script>
+<script src="../js/coureList.js"></script>
+
+  </body>
+</html>

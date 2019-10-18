@@ -1,0 +1,91 @@
+body{
+  background-color: #1111111c;
+}
+.navbar-default {
+    background-color: transparent;
+}
+
+#joinform{
+  display: none;
+}
+#joinForm{
+  display: none;
+}
+
+#addform{
+  display: none;
+}
+#courelist{
+  display: block;
+}
+.row::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.col-lbl {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-txt {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  box-sizing: border box;
+
+}
+td
+{
+	border-top: 1px #333 inset;
+	text-align: center;
+
+}
+th
+{
+	font-weight: bold;
+	color: #333;
+	text-align: center;
+
+
+}
+
+
+.join-new-button {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    position: inherit;
+
+}
+
+.join-new-button:hover {
+    background-color: #999;
+}
+
+#courelist .container{
+
+  width: 70%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+#credit-col
+{
+	width:75px;
+}
+#course-title-col
+{
+	width:calc(85% - 75px -50px);
+	max-width:calc(100% - 75px - 50px - 100px);
+	text-align: justify;
+}
+#credit-col
+{
+	width:50px;
+
+}
