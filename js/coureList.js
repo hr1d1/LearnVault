@@ -35,13 +35,3 @@ const showCourse = (data) =>{
   coureList.innerHTML = html;
 
 }
-
-function AddCourseForm(){
-  document.getElementById("addform").style.display = "block";
-  document.getElementById("courelist").style.display = "none";
-}
-
-function courseForm(){
-  document.getElementById("joinform").style.display = "block";
-  document.getElementById("courelist").style.display = "none";
-}
